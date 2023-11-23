@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(homer_model)
+project(elissa3_homer)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -109,7 +109,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES homer_model
+#  LIBRARIES elissa3_homer
 #  CATKIN_DEPENDS gazebo geometry_msgs joint_state_publisher_gui roscpp rviz tf2 urdf
 #  DEPENDS system_lib
 )
@@ -127,7 +127,7 @@ include_directories(
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/homer_model.cpp
+#   src/${PROJECT_NAME}/elissa3_homer.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -138,7 +138,7 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/homer_model_node.cpp)
+# add_executable(${PROJECT_NAME}_node src/elissa3_homer_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -202,7 +202,7 @@ include_directories(
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_homer_model.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_elissa3_homer.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()

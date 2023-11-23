@@ -19,7 +19,7 @@
 		
 		<visual>
 			<geometry>
-				<mesh filename = "package://homer_model/homer_parts/Base_End.stl" scale="0.01 0.01 0.01"/> <!--scale from mm to m should be 0.001--> <!--scale="0.01 0.01 0.01"--> 
+				<mesh filename = "package://elissa3_homer/homer_parts/Base_End.stl" scale="0.01 0.01 0.01"/> <!--scale from mm to m should be 0.001--> <!--scale="0.01 0.01 0.01"--> 
 			</geometry>
 				
 			<!--origin - the reference frame of the visual element with respect to the reference frame of the link -->
@@ -34,7 +34,7 @@
     		<collision>
       			<origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
       			<geometry>
-        			<mesh filename = "package://homer_model/homer_parts/Base_End.stl" scale="0.01 0.01 0.01"/>
+        			<mesh filename = "package://elissa3_homer/homer_parts/Base_End.stl" scale="0.01 0.01 0.01"/>
       			</geometry>
     		</collision>	
 	</link>
@@ -58,7 +58,7 @@
     		
 		<visual>
 			<geometry>
-				<mesh filename = "package://homer_model/homer_parts/Mid.stl" scale="0.01 0.01 0.01"/> <!--scale="0.01 0.01 0.01"--> 
+				<mesh filename = "package://elissa3_homer/homer_parts/Mid.stl" scale="0.01 0.01 0.01"/> <!--scale="0.01 0.01 0.01"--> 
 			</geometry>
 			<origin xyz="0.07 0 -0.069282" rpy="0 -0.7854 0" />
 			<material name="blue">
@@ -68,7 +68,7 @@
 		<collision>
       			<origin xyz="0.07 0 -0.069282" rpy="0 -0.7854 0" />
       			<geometry>
-        			<mesh filename = "package://homer_model/homer_parts/Mid.stl" scale="0.01 0.01 0.01"/> <!--scale="0.01 0.01 0.01"-->
+        			<mesh filename = "package://elissa3_homer/homer_parts/Mid.stl" scale="0.01 0.01 0.01"/> <!--scale="0.01 0.01 0.01"-->
       			</geometry>
     		</collision>
 	</link>
@@ -91,7 +91,7 @@
     		</inertial>
 		<visual>
 			<geometry>
-				<mesh filename = "package://homer_model/homer_parts/Mid.stl" scale="0.01 0.01 0.01"/> <!--scale="0.01 0.01 0.01"--> 
+				<mesh filename = "package://elissa3_homer/homer_parts/Mid.stl" scale="0.01 0.01 0.01"/> <!--scale="0.01 0.01 0.01"--> 
 			</geometry>
 			<origin xyz="0.07 0 -0.069282" rpy="0 -0.7854 0" />
 			<material name="yellow">
@@ -101,7 +101,7 @@
 		<collision>
       			<origin xyz="0.07 0 -0.069282" rpy="0 -0.7854 0" />
       			<geometry>
-        			<mesh filename = "package://homer_model/homer_parts/Mid.stl" scale="0.01 0.01 0.01"/> <!--scale="0.01 0.01 0.01"-->
+        			<mesh filename = "package://elissa3_homer/homer_parts/Mid.stl" scale="0.01 0.01 0.01"/> <!--scale="0.01 0.01 0.01"-->
       			</geometry>
     		</collision>
 	</link>
