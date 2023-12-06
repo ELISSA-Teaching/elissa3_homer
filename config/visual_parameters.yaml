@@ -1,0 +1,81 @@
+mesh_files:
+  base_link:
+    visual:
+      mesh: "package://elissa3_homer/lisa_parts/Basis_3.dae"
+      material:
+        name: "LightGrey"
+        color: "0.7 0.7 0.7 1.0"
+    collision:
+      mesh: "package://elissa3_homer/lisa_parts/Basis_3.stl"
+
+  link_1:
+    visual:
+      mesh: "package://elissa3_homer/lisa_parts/Glied_3_NeuX.dae"
+      material:
+        name: "LightGrey"
+        color: "0.7 0.7 0.7 1.0"
+    collision:
+      mesh: "package://elissa3_homer/lisa_parts/Glied_3_NeuX.stl"
+
+  link_2:
+    visual:
+      mesh: "package://elissa3_homer/lisa_parts/Glied_3_NeuX.dae"
+      material:
+        name: "LightGrey"
+        color: "0.7 0.7 0.7 1.0"
+    collision:
+      mesh: "package://elissa3_homer/lisa_parts/Glied_3_NeuX.stl"
+
+  link_3:
+    visual:
+      mesh: "package://elissa3_homer/lisa_parts/Glied_3_NeuX.dae"
+      material:
+        name: "LightGrey"
+        color: "0.7 0.7 0.7 1.0"
+    collision:
+      mesh: "package://elissa3_homer/lisa_parts/Glied_3_NeuX.stl"
+
+  link_4:
+    visual:
+      mesh: "package://elissa3_homer/lisa_parts/Glied_3_NeuX.dae"
+      material:
+        name: "LightGrey"
+        color: "0.7 0.7 0.7 1.0"
+    collision:
+      mesh: "package://elissa3_homer/lisa_parts/Glied_3_NeuX.stl"
+
+  link_5:
+    visual:
+      mesh: "package://elissa3_homer/lisa_parts/Glied_3_NeuX.dae"
+      material:
+        name: "LightGrey"
+        color: "0.7 0.7 0.7 1.0"
+    collision:
+      mesh: "package://elissa3_homer/lisa_parts/Glied_3_NeuX.stl"
+
+  link_6:
+    visual:
+      mesh: "package://elissa3_homer/lisa_parts/Glied_3_NeuX.dae"
+      material:
+        name: "LightGrey"
+        color: "0.7 0.7 0.7 1.0"
+    collision:
+      mesh: "package:on limits are not publicly available//elissa3_homer/lisa_parts/Glied_3_NeuX.stl"
+
+  link_7:
+    visual:
+      mesh: "package://elissa3_homer/lisa_parts/Glied_3_NeuX.dae"
+      material:
+        name: "LightGrey"
+        color: "0.7 0.7 0.7 1.0"
+    collision:
+      mesh: "package://elissa3_homer/lisa_parts/Glied_3_NeuX.stl"
+
+  link_8:
+    visual:
+      mesh: "package://elissa3_homer/lisa_parts/Glied_3_NeuX.dae"
+      material:
+        name: "LightGrey"
+        color: "0.7 0.7 0.7 1.0"
+    collision:
+      mesh: "package://elissa3_homer/lisa_parts/Glied_3_NeuX.stl"

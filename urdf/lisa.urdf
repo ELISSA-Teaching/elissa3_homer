@@ -177,7 +177,7 @@
 		<origin xyz="-0.35355 0 0.35355" rpy="0 -1.5708 0"/>
 		<axis xyz="0 0 1"/>
 		<limit effort="300" velocity="2.0" lower="-6" upper="6"/>
-		<dynamics damping="0.1"/>
+		<dynamics damping="0.1"/>3.1416
 	</joint>
 
 	<link name="link_5">
