@@ -1,0 +1,102 @@
+# Physical parameters
+
+#dh_parameters:
+#  d1: 0
+#  a2: 0
+#  a3: 0
+#  d4: 0         # wrist1_length = d4 - elbow_offset - shoulder_offset 
+#  d5: 0
+#  d6: 0
+
+#offsets:
+#  shoulder_offset: 0 # measured from model
+#  elbow_offset: 0 # measured from model
+
+inertia_parameters:
+  base_mass: 0.2  # This mass might be incorrect
+  base_link_mass: 0.2  # This mass might be incorrect
+  link_1_mass: 0.2
+  link_2_mass: 0.2
+  link_3_mass: 0.2
+  link_4_mass: 0.2
+  link_5_mass: 0.2
+  link_6_mass: 0.2
+  link_7_mass: 0.2
+  link_8_mass: 0.2
+
+  base_link_radius: 0.050   # manually measured
+  link_1_radius: 0.05       # manually measured
+  link_2_radius: 0.05       # manually measured
+  link_3_radius: 0.05       # manually measured
+  link_4_radius: 0.05       # manually measured
+  link_5_radius: 0.05       # manually measured
+  link_6_radius: 0.05       # manually measured
+  link_7_radius: 0.05       # manually measured
+  link_8_radius: 0.05       # manually measured
+
+  links:
+    base:
+      radius: 0.06
+      length: 0.05
+    base_link:
+      base: 0.0
+      radius: 0.035
+      length: 0.05
+    link_1:
+      base: 0.0
+      radius: 0.035
+      length: 0.05
+    link_2:
+      base: 0.0
+      radius: 0.035
+      length: 0.05
+    link_3:
+      base: 0.0
+      radius: 0.035
+      length: 0.05
+    link_4:
+      base: 0.0
+      radius: 0.035
+      length: 0.12
+    link_5:
+      base: 0.0
+      radius: 0.035
+      length: 0.05
+    link_6:
+      base: 0.0
+      radius: 0.035
+      length: 0.05
+    link_7:
+      base: 0.0
+      radius: 0.035
+      length: 0.05
+    link_8:
+      base: 0.0
+      radius: 0.035
+      length: 0.05
+
+#  center_of_mass:
+#    shoulder_cog:
+#      x: 0.0
+#      y: 0.00193
+#      z: -0.02561
+#    upper_arm_cog:
+#      x: 0.0
+#      y: -0.024201
+#      z: 0.2125
+#    forearm_cog:
+#      x: 0.0
+#      y: 0.0265
+#      z: 0.11993
+#    wrist_1_cog:
+#      x: 0.0
+#      y: 0.110949
+#      z: 0.01634
+ #   wrist_2_cog:
+#      x: 0.0
+#      y: 0.0018
+#      z: 0.11099
+#    wrist_3_cog:
+#      x: 0.0
+#      y: 0.001159
+ #     z: 0.0
