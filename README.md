@@ -1,0 +1,11 @@
+# elissa3_homer
+Modellierung von HOMER-LISA
+
+Das Paket wurde aufgebaut elissa3_homer wurde ähnlich aufgebaut wie das UR Package.
+
+homer_description und lisa_moveit_config wurden bereits angepasst und überarbeitet.
+Mit dem lisa_moveit_config lässt sich die Endeffector Position des Roboterarms besstimmen und mithilfe der Inversen Kinematik die daraus resultierenden Gelenkpositionen bestimmen.
+Das kann mit folgendem Kommando geöffnet werden:
+
+roslaunch lisa_moveit_config demo.launch
+
