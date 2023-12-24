@@ -1,10 +1,10 @@
-#include <ur_kinematics/ur_kin.h>
+#include <homer_kinematics/homer_kin.h>
 
 #include <math.h>
 #include <stdio.h>
 
 
-namespace ur_kinematics {
+namespace homer_kinematics {
 
   namespace {
     const double ZERO_THRESH = 0.00000001;
@@ -44,7 +44,7 @@ namespace ur_kinematics {
     #endif
 
     //#define UR5_PARAMS
-    #ifdef UR5_PARAMS
+    #ifdef lisa_PARAMS
     const double d1 =  0.089159;
     const double a2 = -0.42500;
     const double a3 = -0.39225;
@@ -384,7 +384,7 @@ namespace ur_kinematics {
 
 
 #define IKFAST_HAS_LIBRARY
-#include <ur_kinematics/ikfast.h>
+#include <homer_kinematics/ikfast.h>
 using namespace ikfast;
 
 // check if the included ikfast version matches what this file was compiled with
@@ -429,7 +429,7 @@ IKFAST_API bool ComputeIk(const IkReal* eetrans, const IkReal* eerot, const IkRe
 
   to_mat44(T, eetrans, eerot);
 
-  int num_sols = ur_kinematics::inverse(T, q_sols,pfree[0]);
+  int num_sols = homer_kinematics::inverse(T, q_sols,pfree[0]);
 
   std::vector<int> vfree(0);
 
@@ -444,7 +444,7 @@ IKFAST_API bool ComputeIk(const IkReal* eetrans, const IkReal* eerot, const IkRe
 IKFAST_API void ComputeFk(const IkReal* j, IkReal* eetrans, IkReal* eerot)
 {
     double T[16];
-    ur_kinematics::forward(j,T);
+    homer_kinematics::forward(j,T);
     from_mat44(T,eetrans,eerot);
 }
 
@@ -461,7 +461,7 @@ IKFAST_API int GetIkRealSize() { return sizeof(IkReal); }
 #ifndef IKFAST_NO_MAIN
 
 using namespace std;
-using namespace ur_kinematics;
+using namespace homer_kinematics;
 
 int main(int argc, char* argv[])
 {

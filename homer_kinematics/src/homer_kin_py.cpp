@@ -39,7 +39,7 @@
 #include <boost/numpy.hpp>
 #include <boost/scoped_array.hpp>
 
-#include <ur_kinematics/ur_kin.h>
+#include <homer_kinematics/homer_kin.h>
 
 namespace p = boost::python;
 namespace np = boost::numpy;
@@ -59,7 +59,7 @@ np::ndarray forward_wrapper(np::ndarray const & q_arr) {
   }
   Py_intptr_t shape[2] = { 4, 4 };
   np::ndarray result = np::zeros(2,shape,np::dtype::get_builtin<double>()); 
-  ur_kinematics::forward(reinterpret_cast<double*>(q_arr.get_data()), 
+  homer_kinematics::forward(reinterpret_cast<double*>(q_arr.get_data()), 
                          reinterpret_cast<double*>(result.get_data()));
   return result;
 }
@@ -80,12 +80,12 @@ np::ndarray inverse_wrapper(np::ndarray const & array, PyObject * q6_des_py) {
   double* T = reinterpret_cast<double*>(array.get_data());
   double* q_sols = (double*) malloc(8*6*sizeof(double));
   double q6_des = PyFloat_AsDouble(q6_des_py);
-  int num_sols = ur_kinematics::inverse(T, q_sols, q6_des);
+  int num_sols = homer_kinematics::inverse(T, q_sols, q6_des);
   q_sols = (double*) realloc(q_sols, num_sols*6*sizeof(double));
   return np::from_data(q_sols, np::dtype::get_builtin<double>() , p::make_tuple(num_sols, 6), p::make_tuple(6*sizeof(double), sizeof(double)), p::object());
 }
 
-BOOST_PYTHON_MODULE(ur_kin_py) {
+BOOST_PYTHON_MODULE(homer_kin_py) {
   np::initialize();  // have to put this in any module that uses Boost.NumPy
   p::def("forward", forward_wrapper);
   p::def("inverse", inverse_wrapper);

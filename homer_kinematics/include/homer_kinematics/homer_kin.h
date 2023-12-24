@@ -35,8 +35,8 @@
  *  ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  *********************************************************************/
-#ifndef UR_KIN_H
-#define UR_KIN_H
+#ifndef homer_KIN_H
+#define homer_KIN_H
 
 // These kinematics find the tranfrom from the base link to the end effector.
 // Though the raw D-H parameters specify a transform from the 0th link to the 6th link,
@@ -55,7 +55,7 @@
 //  1,  0,  0,  0
 //  0,  0,  0,  1
 
-namespace ur_kinematics {
+namespace homer_kinematics {
   // @param q       The 6 joint values 
   // @param T       The 4x4 end effector pose in row-major ordering
   void forward(const double* q, double* T);

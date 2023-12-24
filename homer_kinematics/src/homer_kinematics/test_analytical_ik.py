@@ -2,8 +2,8 @@ from __future__ import print_function
 import numpy as np
 import sys
 import roslib
-roslib.load_manifest("ur_kinematics")
-from ur_kin_py import forward, inverse
+roslib.load_manifest("homer_kinematics")
+from homer_kin_py import forward, inverse
 
 def best_sol(sols, q_guess, weights):
     valid_sols = []

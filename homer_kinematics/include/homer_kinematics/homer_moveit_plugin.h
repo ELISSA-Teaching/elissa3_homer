@@ -72,8 +72,8 @@
 
 /* Author: Sachin Chitta, David Lu!!, Ugo Cupcic */
 
-#ifndef UR_KINEMATICS_PLUGIN_
-#define UR_KINEMATICS_PLUGIN_
+#ifndef homer_KINEMATICS_PLUGIN_
+#define homer_KINEMATICS_PLUGIN_
 
 // ROS
 #include <ros/ros.h>
@@ -101,19 +101,19 @@
 #include <moveit/robot_model/robot_model.h>
 #include <moveit/robot_state/robot_state.h>
 
-namespace ur_kinematics
+namespace homer_kinematics
 {
 /**
 * @brief Specific implementation of kinematics using KDL. This version can be used with any robot.
 */
-  class URKinematicsPlugin : public kinematics::KinematicsBase
+  class homerKinematicsPlugin : public kinematics::KinematicsBase
   {
     public:
 
     /**
 * @brief Default constructor
 */
-    URKinematicsPlugin();
+    homerKinematicsPlugin();
 
     virtual bool getPositionIK(const geometry_msgs::Pose &ik_pose,
                                const std::vector<double> &ik_seed_state,
@@ -264,9 +264,9 @@ namespace ur_kinematics
     std::vector<kdl_kinematics_plugin::JointMimic> mimic_joints_;
 
     std::vector<double> ik_weights_;
-    std::vector<std::string> ur_joint_names_;
-    std::vector<std::string> ur_link_names_;
-    int ur_joint_inds_start_;
+    std::vector<std::string> homer_joint_names_;
+    std::vector<std::string> homer_link_names_;
+    int homer_joint_inds_start_;
     std::string arm_prefix_;
 
     // kinematic chains representing the chain from the group base link to the

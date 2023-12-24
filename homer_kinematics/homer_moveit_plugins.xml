@@ -18,8 +18,8 @@
   </class>
 </library>
 
-<library path="lib/libur5_moveit_plugin">
-  <class name="ur_kinematics/UR5KinematicsPlugin" type="ur_kinematics::URKinematicsPlugin" base_class_type="kinematics::KinematicsBase">
+<library path="lib/liblisa_moveit_plugin">
+  <class name="homer_kinematics/lisaKinematicsPlugin" type="homer_kinematics::homerKinematicsPlugin" base_class_type="kinematics::KinematicsBase">
     <description>
       Analytic kinematics for the Universal Robots UR5.
       Developed by Kelsey Hawkins from Georgia Tech.
